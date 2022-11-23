@@ -2,7 +2,7 @@
 Pagina web para la empresa el gran molino
 
 # BASE DE DATOS
-Crear una carpeta sql para guardar la base de datos
+Guardar la base de datos en la carpeta sql 
 
 # Modificar
 En caso de querer cambiar algo. Primero crear una nueva rama

@@ -1,0 +1,174 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Pan de Yema (x kg)",
+            "price": 8,
+            "image": "../img/pan1.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 2,
+            "title": "Torta Tutti Frutti",
+            "price": 40,
+            "image": "../img/torta1.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        },
+        {
+            "id": 3,
+            "title": "Tres Leches de Cafe",
+            "price": 35,
+            "image": "../img/pastel1.png?auto=compress&amp;h=305",
+            "category": "pastel"
+        },
+        {
+            "id": 4,
+            "title": "Cheesecake de Fresa",
+            "price": 29,
+            "image": "../img/pastel2.png?auto=compress&amp;h=305",
+            "category": "pastel"
+        },
+        {
+            "id": 5,
+            "title": "Milenio",
+            "price": 25,
+            "image": "../img/pastel3.png?auto=compress&amp;h=305",
+            "category": "pastel"
+
+        },
+        {
+            "id": 6,
+            "title": "Keke de Zanahoria",
+            "price": 25,
+            "image": "../img/pastel4.png?auto=compress&amp;h=305",
+            "category": "pastel"
+
+        },
+        {
+            "id": 7,
+            "title": "Pan de Leche (x kg)",
+            "price": 8,
+            "image": "../img/pan2.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 8,
+            "title": "Torta de Coco",
+            "price": 35,
+            "image": "../img/torta2.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        },
+        {
+            "id": 9,
+            "title": "Opera",
+            "price": 29,
+            "image": "../img/pastel5.png?auto=compress&amp;h=305",
+            "category": "pastel"
+        },
+        {
+            "id": 10,
+            "title": "Pecado de Lúcuma",
+            "price": 30,
+            "image": "../img/pastel6.png?auto=compress&amp;h=305",
+            "category": "pastel"
+        },
+        {
+            "id": 11,
+            "title": "Tornado de Chirimoya",
+            "price": 40,
+            "image": "../img/pastel7.png?auto=compress&amp;h=305",
+            "category": "pastel"
+        },
+        {
+            "id": 12,
+            "title": "Keke de Piña",
+            "price": 35,
+            "image": "../img/pastel8.png?auto=compress&amp;h=305",
+            "category": "pastel"
+        },
+        {
+            "id": 13,
+            "title": "Pan Frances (x kg)",
+            "price": 7.50,
+            "image": "../img/pan3.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 14,
+            "title": "Torta Doña Pepa",
+            "price": 40,
+            "image": "../img/torta3.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        },
+        {
+            "id": 15,
+            "title": "Pan Ciabatta (x kg)",
+            "price": 7.50,
+            "image": "../img/pan4.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 16,
+            "title": "Torta de Guanábana",
+            "price": 30,
+            "image": "../img/torta4.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        },
+        {
+            "id": 17,
+            "title": "Pan Baggete (c/u)",
+            "price": 2.50,
+            "image": "../img/pan5.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 18,
+            "title": "Pan de Anis (x kg)",
+            "price": 8,
+            "image": "../img/pan6.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 19,
+            "title": "Pan Chapla (x kg)",
+            "price": 8,
+            "image": "../img/pan7.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 20,
+            "title": "Pan de Molde (x kg)",
+            "price": 9.50,
+            "image": "../img/pan8.png?auto=compress&amp;h=305",
+            "category": "panes"
+        },
+        {
+            "id": 21,
+            "title": "Torta con Albaricoque",
+            "price": 30,
+            "image": "../img/torta5.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        },
+        {
+            "id": 22,
+            "title": "Torta Moka",
+            "price": 30,
+            "image": "../img/torta6.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        },
+        {
+            "id": 23,
+            "title": "Torta de Chocolate",
+            "price": 35,
+            "image": "../img/torta7.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        },
+        {
+            "id": 24,
+            "title": "Torta de Maracuyá",
+            "price": 30,
+            "image": "../img/torta8.png?auto=compress&amp;h=305",
+            "category": "tortas"
+        }
+    ]
+}

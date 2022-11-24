@@ -1,5 +1,12 @@
-<!DOCTYPE html>
+<?php
+   include 'php/conexion.php';
 
+  $query = "Select * from  produtos";
+
+?>
+
+
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -20,6 +27,7 @@
 <body>
 
 
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -37,7 +45,6 @@
                         <i class="bx bx-cart"></i>
                         <span class="item__total">0</span>
                     </div>
-
                 </ul>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
@@ -76,14 +83,12 @@
         <option value="panes">Panes</option>
         <option value="tortas">Tortas</option>
         <option value="pastel">Pasteles</option>
-        
         <!--option value="rolexDay">Rolex Day</!--option!-->
         <!--option value="hublot">Hublot</!--option!-->
         <!--option value="tag">Tag Heuer</!--option!-->
       </select>
             </div>
         </div>
-
     </section>
 
     <!--Productos-->
@@ -174,7 +179,7 @@
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
-                    <a href="panaderia_trabajo.php">Administardor</a>
+
                     <img src="img/logo.png" alt="" width="100px">
 
                     <span class="text-muted">&copy; 2022 El Gran Molino, Inc</span>

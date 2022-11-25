@@ -4,12 +4,12 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  header("location: welcome.php");
+  header("location: ../productos/panaderia_trabajo.php");
   exit;
 }
  
 // Include config file
-require_once "config.php";
+require_once "conexion.php";
  
 // Define variables and initialize with empty values
 $username = $password = "";
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Check if password is empty
-    if(empty(trim($_POST["password"]))){
+    if(empty(trim($_POST["pwd"]))){
         $password_err = "Por favor ingrese su contraseña.";
     } else{
         $password = trim($_POST["password"]);

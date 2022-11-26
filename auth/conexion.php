@@ -1,19 +1,17 @@
-<?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
+<?php 
+$contrasena = "1234";
+$usuario = "root";
+$nombre_bd = "bdmolino";
 
-function conectar(){
-    $host="localhost";
-    $user="root";
-    $pass="bdmolino";
-
-    $bd="alumno";
-
-    $con=mysqli_connect($host,$user,$pass);
-
-    mysqli_select_db($con,$bd);
-
-    return $con;
+try {
+	$bd = new PDO (
+		'mysql:host=localhost;
+		dbname='.$nombre_bd,
+		$usuario,
+		$contrasena,
+		array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
+	);
+} catch (Exception $e) {
+	echo "Problema con la conexion: ".$e->getMessage();
 }
-?>
 ?>

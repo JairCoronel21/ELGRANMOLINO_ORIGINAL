@@ -1,22 +1,24 @@
 <?php
     //print_r($_POST);
-    if(empty($_POST["oculto"]) || empty($_POST["txtNombre"]) || empty($_POST["txtEdad"]) || empty($_POST["txtSigno"])){
+    if(empty($_POST["oculto"]) || empty($_POST["txtproducto"]) || empty($_POST["txtdetalles"]) || empty($_POST["txtprecio"])  || empty($_POST["txtimagen"])  || empty($_POST["txtcategoria"])){
         header('Location:  ../panaderia_trabajo.php?mensaje=falta');
         exit();
     }
 
-    include_once '../../conexion.php';
-    $nombre = $_POST["txtNombre"];
-    $edad = $_POST["txtEdad"];
-    $signo = $_POST["txtSigno"];
+    include_once "../../auth/conexion.php";
+    $nombre_prod = $_POST['txtproducto'];
+    $detalles_prod = $_POST['txtdetalles'];
+    $precio_prod = $_POST['txtprecio'];
+    $imagen_prod = $_POST['txtimagen'];
+    $id_cat = $_POST['txtcategoria'];
     
-    $sentencia = $bd->prepare("INSERT INTO persona(nombre,edad,signo) VALUES (?,?,?);");
-    $resultado = $sentencia->execute([$nombre,$edad,$signo]);
+    $sentencia = $bd->prepare("INSERT INTO productos(nombre_prod,detalles_prod,precio_prod,imagen_prod,id_cat) VALUES (?,?,?,?,?);");
+    $resultado = $sentencia->execute([$nombre_prod,$detalles_prod,$precio_prod,$imagen_prod,$id_cat]);
 
     if ($resultado === TRUE) {
-        header('Location: index.php?mensaje=registrado');
+        header('Location: ../panaderia_trabajo.php?mensaje=registrado');
     } else {
-        header('Location: index.php?mensaje=error');
+        header('Location: ../panaderia_trabajo.php?mensaje=error');
         exit();
     }
     

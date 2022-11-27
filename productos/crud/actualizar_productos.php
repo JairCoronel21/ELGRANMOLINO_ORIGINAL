@@ -6,7 +6,7 @@
         exit();
     }
 
-    include_once '../../conexion.php';
+    include_once "../../auth/conexion.php";
     $id_producto = $_GET['id_producto'];
 
     $sentencia = $bd->prepare("select * from productos where id_producto = ?;");
@@ -20,23 +20,33 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header">
-                    Editar datos:
+                    Editar Productos:
                 </div>
-                <form class="p-4" method="POST" action="editarProceso.php">
+                <form class="p-4" method="POST" action="update.php">
                     <div class="mb-3">
-                        <label class="form-label">Nombre: </label>
-                        <input type="text" class="form-control" name="txtNombre" required 
-                        value="<?php echo $productos->nombre; ?>">
+                        <label class="form-label">Nombre Producto: </label>
+                        <input type="text" class="form-control" name="txtproducto" required 
+                        value="<?php echo $productos->nombre_prod; ?>">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Edad: </label>
-                        <input type="number" class="form-control" name="txtEdad" autofocus required
-                        value="<?php echo $productos->edad; ?>">
+                        <label class="form-label">Detalle: </label>
+                        <input type="text" class="form-control" name="txtdetalles" autofocus required
+                        value="<?php echo $productos->detalles_prod; ?>">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Signo: </label>
-                        <input type="text" class="form-control" name="txtSigno" autofocus required
-                        value="<?php echo $productos->signo; ?>">
+                        <label class="form-label">Precio: </label>
+                        <input type="number" class="form-control" name="txtprecio" autofocus required
+                        value="<?php echo $productos->precio_prod; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Imagen: </label>
+                        <input type="file" name="txtimagen" class="from-control">
+                        <img width="100" src="data:image/jpeg;base64,<?php echo  base64_encode($row['imagen_prod']); ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Categoria: </label>
+                        <input type="text" class="form-control" name="txtcategoria" autofocus required
+                        value="<?php echo $productos->id_cat; ?>">
                     </div>
                     <div class="d-grid">
                         <input type="hidden" name="id_producto" value="<?php echo $productos->id_producto; ?>">

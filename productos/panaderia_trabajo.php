@@ -101,7 +101,7 @@
                                 <td><?php echo $dato->nombre_prod; ?></td>
                                 <td><?php echo $dato->detalles_prod; ?></td>
                                 <td><?php echo $dato->precio_prod; ?></td>
-                                <td><img width="100" src="data:image/jpeg;base64,<?php echo base64_encode($dato->imagen_prod); ?>"></td>
+                                <td><img width="100" src="data:base64,<?php echo base64_encode($dato->imagen_prod); ?>"></td>
                                 <td><?php echo $dato->id_cat; ?></td>
                                 <td><a class="text-success" href="crud/actualizar_productos.php?id_producto=<?php echo $dato->id_producto; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                 <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="crud/eliminar_productos.php?id_producto=<?php echo $dato->id_producto; ?>"><i class="bi bi-trash"></i></a></td>
